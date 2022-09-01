@@ -1,0 +1,34 @@
+.Footer {
+    background-color: #4a4a4a;
+    margin-top: 95px;
+    height: 112px;
+    display: flex;
+}
+
+.Footer__box {
+   display: grid;
+   width: 100%;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-items: center;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+   font-size: 14px;
+   color: #fff;
+}
+.Footer__logo {
+    width: 70px;
+    height: 70px;
+}
+.Footer__links {
+    width: 100%;
+    display: flex;
+    justify-items: end;
+}
+.Footer__url {
+    color: #fff;
+}
+.Footer__url:first-child {
+    margin-left: auto;
+    padding-right: 20px;
+}

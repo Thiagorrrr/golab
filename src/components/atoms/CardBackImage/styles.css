@@ -1,0 +1,93 @@
+.CardBackImage {
+    display: flex;
+    position: relative;
+    padding: 24px;
+    border-radius: 16px;
+}
+.CardBackImage__link {
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+.CardBackImage__link::after {
+    border-radius: 16px;
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.30));
+}
+
+.CardBackImage__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+.CardBackImage--portraint {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 232px;
+    height: 330px;
+}
+.CardBackImage--landScape {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    height: 267px;
+    margin-top: 16px;
+}
+
+.CardBackImage__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.CardBackImage--landScape .CardBackImage__box {
+    padding-top: 16px;
+}
+.CardBackImage--portraint .CardBackImage__box {
+    padding: 30px 16px;
+}
+
+
+.CardBackImage__info {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    font-size: 12px; 
+    color: #fff;
+}
+
+.CardBackImage__title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+.CardBackImage--landScape .CardBackImage__title {
+    font-size: 24px;  
+}
+.CardBackImage__description {
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    padding: 16px 0;
+}
+.CardBackImage__hour {
+    font-size: 14px;
+    color: #767676;
+}

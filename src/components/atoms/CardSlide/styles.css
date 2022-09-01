@@ -1,0 +1,83 @@
+#CardFirst,
+#CardSecond {
+    display: none;
+}
+#CardFirst ~ .CardSlide__hide .CardSlide__right,
+#CardSecond ~ .CardSlide__hide .CardSlide__right {
+    display: none;
+}
+
+#CardFirst:checked ~.CardSlide__hide .CardSlide__left,
+#CardSecond:checked ~.CardSlide__hide .CardSlide__left {
+    display: none;
+}
+
+#CardFirst:checked ~.CardSlide__hide .CardSlide__right,
+#CardSecond:checked ~.CardSlide__hide .CardSlide__right {
+    display: flex;
+}
+
+#CardFirst:checked ~.CardSlide__hide .CardSlide__right  .CardSlide__box--right,
+#CardSecond:checked ~.CardSlide__hide .CardSlide__right  .CardSlide__box--right {
+    background-color: #fff;
+}
+#CardFirst:checked ~.CardSlide__hide .CardSlide__right  .CardSlide__box--left,
+#CardSecond:checked ~.CardSlide__hide .CardSlide__right  .CardSlide__box--left {
+    background-color: #8ab3c9;
+}
+
+.ContentFirst .CardSlide {
+    margin-top: 10px;
+}
+
+.CardSlide {
+    display: flex;
+    flex-direction: column;
+}
+.CardSlide__img {
+    width: 100%;
+    height: 267px;
+    border-radius: 16px 16px 0 0 ;
+}
+.CardSlide__boxText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #3a7da6;
+    border-radius: 0 0 16px 16px;
+}
+
+.CardSlide__info {
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    font-size: 14px; 
+}
+
+.CardSlide__description {
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 70%;
+}
+
+.CardSlide__box {
+    position: absolute;
+    bottom: 30px;
+    display: block;
+    content: '';
+    width: 30px;
+    height: 4px;
+    cursor: pointer;
+}
+.CardSlide__box--left {
+    right: 80px;
+    background-color: #fff;
+}
+.CardSlide__box--right {
+   right: 30px;
+   background-color: #8ab3c9;
+}

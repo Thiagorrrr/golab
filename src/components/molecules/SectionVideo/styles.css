@@ -1,0 +1,26 @@
+.SectionVideo {
+  padding-top: 50px;
+}
+.SectionVideo__box {
+  display: flex;
+  justify-content: space-between;
+}
+.SectionVideo__title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding-bottom: 40px;
+  color: #9d9d9d;
+}
+.SectionVideo__title:before {
+  display: block;
+  content: "";
+  width: calc(100% - 200px);
+  position: absolute;
+  right: 0;
+  height: 2px;
+  background-color: #9d9d9d;
+}

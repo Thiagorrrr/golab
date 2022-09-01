@@ -1,0 +1,23 @@
+.SectionCards,
+.SectionMosaic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.SectionCards {
+  justify-content: center;
+  margin-top: 53px;
+  position: relative;
+}
+
+.SectionCards::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: calc(100% + 195px);
+    height: 2px;
+    background-color:  #cdcdcd;
+    right: 10px;
+    top: -20px;
+    z-index: -1;
+}

@@ -1,0 +1,84 @@
+.CardVideo {
+    width: 290px;
+    margin-bottom: 20px;
+}
+.CardVideo__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.CardVideo__img {
+    width: 290px;
+    height: 180px;
+    border-radius: 16px 16px 0 0;
+}
+.CardVideo__playIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.CardVideo__box {
+    padding: 30px 25px 40px 25px;
+    background-color: #fff;
+    border-radius: 0 0 16px 16px;
+}
+.CardVideo__play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: #fff;
+    position: absolute;
+    bottom: calc(50% - 30px);
+    left: 25px;
+}
+
+.CardVideo__hour {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.CardVideo__play.CardVideo__play--green,
+.CardVideo__hour.CardVideo__hour--green {
+    background-color: #0f8934;
+}
+.CardVideo__play.CardVideo__play--blue,
+.CardVideo__hour.CardVideo__hour--blue {
+    background-color: #3a7da6;
+}
+.CardVideo__play.CardVideo__play--purple,
+.CardVideo__hour.CardVideo__hour--purple {
+    background-color: #bc0cf2;
+}
+
+.CardVideo__info {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px; 
+}
+.CardVideo__info.CardVideo__info--green {
+    color: #0f8934;
+}
+.CardVideo__info.CardVideo__info--blue {
+    color: #3a7da6;
+}
+.CardVideo__info.CardVideo__info--purple {
+    color: #bc0cf2;
+}
+.CardVideo__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px; 
+    line-height: 1.2;
+}

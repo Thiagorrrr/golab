@@ -1,0 +1,116 @@
+.CardImage {
+    border-radius: 16px;
+    padding-top: 40px;
+}
+.CardImage.CardImage--portraint {
+    padding-top: 0; 
+}
+.CardImage__link {
+    text-decoration: none;
+}
+.CardImage:first-child {
+    padding-top: 0;
+}
+.CardImage.CardImage--simple {
+    padding-top: 0;
+    border-radius: 16px;
+}
+.CardImage--portraint .CardImage__link  {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    padding: 0;
+}
+.CardImage--landScape  .CardImage__link {
+    display: flex;
+    flex-direction: row;
+}
+.CardImage--simple  .CardImage__link {
+    border-radius: 16px;
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 90px;
+}
+.CardImage--simple:first-child   .CardImage__link{
+   margin-top: 0;
+}
+
+.CardImage__box {
+    display: block;
+}
+
+.CardImage--simple .CardImage__box {
+    padding-right: 16px;
+}
+.CardImage--landScape .CardImage__box {
+    padding-left: 30px;
+}
+
+.CardImage__img {
+    border-radius: 8px;
+}
+
+.CardImage--landScape .CardImage__img {
+    min-width: 265px;
+    width: 265px;
+    height: 160px;
+}
+.CardImage--portraint .CardImage__img {
+    min-width: 230px;
+    width: 230px;
+    height: 205px;
+}
+.CardImage--simple .CardImage__img {
+    min-width: 150px;
+    width: 150px;
+    height: 95px;
+}
+
+.CardImage__info {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px; 
+}
+
+.CardImage--portraint .CardImage__info  {
+    margin-top: 8px; 
+    display: block;
+}
+
+.CardImage__info.CardImage__info--green {
+  color: #0f8934;
+}
+.CardImage__info.CardImage__info--blue {
+  color: #3a7da6;
+}
+.CardImage__info.CardImage__info--purple {
+  color: #bc0cf2;
+}
+.CardImage__info.CardImage__info--yellow {
+  color: #e29c3d;
+}
+
+.CardImage__description {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 15px;
+    margin-bottom: 0;
+    height: 100px;
+    overflow: hidden;
+}
+.CardImage--simple .CardImage__description {
+    height: auto;
+}
+
+.CardImage--landScape .CardImage__description {
+    font-size: 24px;  
+}
+
+.CardImage__hour {
+    font-size: 14px;
+    color: #767676;
+}
